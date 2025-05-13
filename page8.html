@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page8</title>
+</head>
+<body>
+    <h1>36. Create an array, pass it to a function that removes an element, and print the result.
+    </h1>
+    <h1>37. Store an array in two different variables, modify one using push(), and print both.
+</h1>
+<h1>38. Use pop() on an array inside a function and see if the original array changes.
+</h1>
+<h1>39. Pass an array to a function that changes its length and check the effect.
+</h1>
+<h1>40. Create two separate arrays with identical elements and check if they are strictly equal.
+</h1>
+<script>
+    // Q36?
+    function removeElement(arr) {
+    arr.splice(1, 1);  
+}
+
+let arr = [1, 2, 3, 4];
+removeElement(arr);
+
+console.log("Q36-->",arr); 
+// Q37?
+let arr1 = [1, 2, 3];
+let arr2 = arr1; 
+arr2.push(4);  
+
+console.log("Q37-->",arr1);
+console.log("Q37-->",arr2);
+// Q28?
+function removeLastElement(arry) {
+    arr.pop();  
+}
+
+let arry = [1, 2, 3, 4];
+removeLastElement(arry);
+
+console.log("Q38-->",arry); 
+// Q39?
+function changeArrayLength(Arr) {
+    arr.length = 2;   
+}
+
+let Arr = [1, 2, 3, 4];
+changeArrayLength(Arr);
+
+console.log("Q39-->",Arr);  
+// Q40?
+let Arr1 = [1, 2, 3];
+let Arr2 = [1, 2, 3];
+
+console.log(Arr1 === Arr2); 
+// 40 Question   Will Be complet
+
+
+
+</script>
+</body>
+</html>

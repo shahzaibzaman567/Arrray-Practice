@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 7</title>
+</head>
+<body>
+<h1>    31. Assign an array to another variable and modify the original array. Print both variables.
+</h1>
+<h1> 32. Create a function that adds an element to an array and check if the original array
+changes.</h1>
+<h1> 33. Pass an array to a function, modify its first element, and print the modified array.
+</h1>
+    <h1> 34. Create an array, pass it to another variable, modify the second variable, and print both.
+    </h1>
+        <h1> 35. Check if two variables referencing the same array are equal after modifying one.
+        </h1>
+        <script>
+            //Q31?
+            let arr1 = [1, 2, 3, 4];
+let arr2 = arr1; 
+arr1.push(5);  
+console.log("Q31?--->",arr1); 
+console.log("Q31?--->",arr2);
+
+//Q32?
+function addElement(arr, element) {
+    arr.push(element);  
+}
+
+let arr = [1, 2, 3];
+addElement(arr, 4);  
+console.log(arr);  
+ 
+// Q33?
+function modifyFirstElement(arr) {
+    arr[0] = 10; 
+}
+
+let arry = [1, 2, 3, 4];
+modifyFirstElement(arry);
+
+console.log("Q33-->",arry);
+//Q34?
+let arry1 = [1, 2, 3];
+let arry2 = arry1; 
+arry2[1] = 10;  
+
+console.log("Q34-->",arry1);
+console.log("Q34-->",arry2);
+// 35?
+let Arr1 = [1, 2, 3];
+let Arr2 = Arr1;  
+Arr1.push(4);  
+
+console.log("Q35-->",Arr1 === Arr2); 
+
+
+
+ </script>
+</body>
+</html>
